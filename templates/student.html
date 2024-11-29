@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Student Dashboard</h2>
+    <h3>Available Courses</h3>
+    <ul>
+        {% for course in courses %}
+            <li>{{ course[1] }} - {{ course[2] }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
